@@ -1,5 +1,5 @@
-]\[
-= $(document).ready(function(){
+
+ $(document).ready(function(){
         $("#cancelf").click(function(){
             $(".screen2").css("display","none");
            $(".screen1").css("display","block");
@@ -9,7 +9,8 @@
         $(".Contact1").click(function(){
             var name=$(this).html()
             $("#name2").html(name);
-            $("#number2").hide();
+            $("#number2").css("display","none");
+            $("#name2").css("display","block");
 
             $(".screen2").css("display","block");
            $(".screen1").css("display","none");
@@ -65,7 +66,8 @@
 
             $("#ncall").click(function(){
                 $("#number2").text( $("#in").val());
-                $("#name2").hide();
+                $("#name2").css("display","none");
+                $("#number2").css("display","block");
             $(".screen2").css("display","block");
            $(".screen1").css("display","none");
            
